@@ -316,11 +316,15 @@
     </svg>
   </a>
 </div>
-<dx-data-grid
-  id="gridContainer"
-  [dataSource]="customers"
-  keyExpr="ID"
-  [columns]="['Empresa', 'Cidade', 'Estado', 'Telefone']"
-  [showBorders]="true"
->
-</dx-data-grid>
+<body>
+  <dx-data-grid
+    id="gridContainer"
+    [dataSource]="customers"
+    keyExpr="Id"
+    [columns]="['Nome', 'Id', 'Idade', 'Empresa' ]"
+    [showBorders]="true"
+  >
+  </dx-data-grid>
+</body>
+
+
